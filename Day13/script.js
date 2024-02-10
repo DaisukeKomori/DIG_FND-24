@@ -207,6 +207,7 @@
 
 // *** ryosuke mochiki ***
 
+
 // function test(actual, expected) {
 //   if (JSON.stringify(actual) === JSON.stringify(expected)) {
 //     console.log("OK! Test PASSED.");
@@ -232,7 +233,6 @@
 //   }
 //   return greeting;
 // }
-// console.log(window.name);
 
 // const friends = ["Mario", "Luigi"];
 // const friends2 = ["Mario", "Luigi", "Peach"];
