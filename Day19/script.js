@@ -131,19 +131,6 @@
 
 // *** koichi takahashi ***
 
-// 'use strict'
-
-// function test(actual, expected) {
-//     if (JSON.stringify(actual) === JSON.stringify(expected)) {
-//       console.log("OK! Test PASSED.");
-//     } else {
-//       console.error("Test FAILED. Try again!");
-//       console.log("    actual: ", actual);
-//       console.log("  expected: ", expected);
-//       console.trace();
-//     }
-//   }
-
 // function doTheThing (numobj) {
 //   const result = [];
 //   for(const num of numobj) {
