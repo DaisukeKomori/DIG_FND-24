@@ -410,16 +410,16 @@
 // putItemInRefrigerator("juice");
 // test(getItemsInRefrigerator(), ["milk", "juice"]);
 
-// 同じアイテムを複数追加後にそれをremoveすると、おかしな挙動
-// （splice(i, 1)後にbreakしておらず、要素を削除しても i++しているため）
-// // putItemInRefrigerator("milk");
-// // putItemInRefrigerator("milk");
-// // test(getItemsInRefrigerator(), ["milk", "juice", "milk", "milk"]);
-// // removeItemFromRefrigerator("milk");
-// // test(getItemsInRefrigerator(), ["juice", "milk", "milk"]);
-
 // removeItemFromRefrigerator("milk");
 // test(getItemsInRefrigerator(), ["juice"]);
+
+// // 同じアイテムを複数追加後にそれをremoveすると、おかしな挙動
+// // （splice(i, 1)後にbreakしておらず、要素を削除しても i++しているため）
+// putItemInRefrigerator("milk");
+// putItemInRefrigerator("milk");
+// putItemInRefrigerator("milk");
+// removeItemFromRefrigerator("milk");
+// test(getItemsInRefrigerator(), ["juice", "milk", "milk"]);
 
 // removeItemFromRefrigerator("milk");
 // test(getItemsInRefrigerator(), ["juice"]);
