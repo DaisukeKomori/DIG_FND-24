@@ -1,0 +1,29 @@
+/* This is a 'stylesheet'. 
+It defines how the elements appear when they are rendered by the browser. */
+
+
+html {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: monospace;
+  height: 100%;
+  justify-content: center;
+}
+
+button {
+  background-color: #DB1F48;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20pt;
+  height: 50px;
+  width: 200px;
+  transition: background-color 1s;
+}
+
+button:hover {
+  background-color: #d7cc7a;
+}
