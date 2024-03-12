@@ -82,12 +82,20 @@ function add (x) {
   }
 }
 
+// const add = x => y => x + y; // DJ
 const addTwo = add(2);
 test(addTwo(3),5);
 test(addTwo(70),72);
 
 const addOneHundred = add(100);
 test(addOneHundred(3),103);
+
+// """Hello"", undefined, ""Hello, JavaScript""の順で表示される。
+// 9行目のconst foo = sayHello();でsayHello()が呼び出され、コンソールに""Hello""が表示される。
+// sayHello関数は戻り値を返さないため、fooにはundefinedが代入され、
+// 12行目のconsole.log(foo);ではundefinedが表示される。
+// 13行目のconsole.log(bar)でbarには10行目で関数が実行され
+// ""Hello, JavaScript""が返され代入されているので、""Hello, JavaScript""が表示される。"
 
 //7 
 /**

@@ -77,6 +77,17 @@ const bar = sayHelloAndName("JavaScript");
 console.log(foo);
 console.log(bar);
 
+// "Hello"
+// "undefined"
+// "Hello, JavaScript"
+// の順で表示されます。
+// プログラムは上から順に実行されます。
+// ①2行目のconsole.log("Hello");の"Hello"出力される。
+// ②12行目のconsole.log(foo);が出力されますが、returnが無いため
+// "undefined"となる。
+// ③13行目のconsole.log(bar);が出力され5行目の(name)に"JavaScript"が引数として
+// 渡されるので"Hello, JavaScript"となる。
+
 //--- 課題6 ---
 
 //別ファイルへ
