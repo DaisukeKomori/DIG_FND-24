@@ -205,11 +205,13 @@ each([4, 5, 6], console.log);
 * @returns {Function} 返された関数は引数 x を受け取り、funcA に x を引数として渡して得られた戻り値を funcB に引数として渡し、得られた結果を返す。
 */
 
-function compose(funcA, funcB){
-  return function (x) {
-    return funcB (funcA(x));
-  }
-}
+// function compose(funcA, funcB){
+//   return function (x) {
+//     return funcB (funcA(x));
+//   }
+// }
+
+const compose = (funcA, funcB) => x => funcB(funcA(x));
 
 function multiplyTwo(x) {
   return x * 2;

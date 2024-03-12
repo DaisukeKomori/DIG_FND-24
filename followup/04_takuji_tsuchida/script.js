@@ -1,6 +1,18 @@
 'use strict'
 // 1行目に記載している 'use strict' は削除しないでください
 
+function test(actual, expected) {
+    if (JSON.stringify(actual) === JSON.stringify(expected)) {
+        console.log("Test PASSED.");
+    } else {
+        console.error("Test FAILED. Keep trying!");
+        console.group("Result:");
+        console.log("  actual:", actual);
+        console.log("expected:", expected);
+        console.groupEnd();
+    }   
+}
+  
 ///////////////////////////////////////////////////////////////////
 // 1
 const xOrNot = (b1, b2) => !(( b1 && !b2 ) || ( !b1 && b2 ))
@@ -146,6 +158,7 @@ test( countSomething([true, true, 1, 0, 1, false, 1]), "NUMBER COUNT: 4" )
 ///////////////////////////////////////////////////////////////////
 // 10
 function each( x, callBack){
+    
     if ( typeof(x) === "object" ) {
         for(const elm of Object.values(x) ) {
             callBack(elm)
